@@ -27,6 +27,8 @@ public class C04_driverManageMethodari {
         driver.manage().window().setPosition(new Point(200,300));
         driver.manage().window().setSize(new Dimension(500,500));
 
+        System.out.println("mmmrrrrrrreeeeeeeeeeeeeeeeeeeeee");
+
         Thread.sleep(3000);  // java'dan gelir ve kodlari bekletir
         driver.close();
 
