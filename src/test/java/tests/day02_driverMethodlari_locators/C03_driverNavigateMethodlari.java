@@ -50,7 +50,7 @@ public class C03_driverNavigateMethodlari {
             System.out.println("Youtube kaynak kodu testi FAILED");
         }
         // sayfayi kapatin
-        System.out.println("ffff");
+
         driver.close();
     }
 }
