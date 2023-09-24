@@ -18,7 +18,7 @@ public class C03_LinkText_PartiallinkText {
         driver.get("https://www.amazon.com");
 
         // Gift Cards linkine tiklayin
-       driver.findElement(By.linkText("Gift Cards")).click();
+       //driver.findElement(By.linkText("Gift Cards")).click();
       driver.findElement(By.partialLinkText("Gift")).click();
 
       // linkin bizi Gift Cards sayfasina yonlendirdigini test edin
