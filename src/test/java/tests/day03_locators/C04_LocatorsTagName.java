@@ -22,22 +22,29 @@ public class C04_LocatorsTagName {
         //3- Sayfada 147 adet link bulundugunu test edin.
         List<WebElement> linkListesi = driver.findElements(By.tagName("a"));
         int actualLinkSayisi = linkListesi.size();
-        //        int actualLinkSayisi = linkListesi.size();
-        //        int expectedLinkSayisi = 147;
-        //​
-        //        if (actualLinkSayisi == expectedLinkSayisi){
-        //            System.out.println("Link sayisi testi PASSED");
-        //        }else{
-        //            System.out.println("Link sayisi testi FAILED");
-        //        }
+         int expectedLinkSayisi =147;
+         if (actualLinkSayisi==linkListesi.size())
+        {
+            System.out.println("Link sayisi testi PASSED");
+        } else {
+             System.out.println("Link sayisi testi FAILED");
+        }
+
 
         //4- Products linkine tiklayin
+        driver.findElement(By.partialLinkText("Products")).click();
 
 
         //5- special offer yazisinin gorundugunu test edin
+        WebElement specialOfferElementi = driver.findElement(By.id("sale_image"));
 
-
+        if (specialOfferElementi.isDisplayed()){
+            System.out.println("Special Offer testi PASSED");
+        }else{
+            System.out.println("Special Offer testi FAILED");
+        }
         //6- Sayfayi kapatin
 
+        driver.close();
     }
 }
