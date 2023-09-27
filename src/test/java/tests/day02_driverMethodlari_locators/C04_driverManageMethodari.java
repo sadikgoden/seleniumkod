@@ -34,19 +34,3 @@ public class C04_driverManageMethodari {
 
     }
 }
-/*
-
-
-
-​
-​
-        driver.manage().window().setSize(new Dimension(500,500));
-        driver.manage().window().setPosition(new Point(200,300));
-​
-        System.out.println("customize size :"+ driver.manage().window().getSize()); // (500, 500)
-        System.out.println("customize konum : " + driver.manage().window().getPosition()); // (200, 300)
-​
-​
-        Thread.sleep(3000); // java'dan gelir ve kodlari bekletir
-        driver.close();
- */
